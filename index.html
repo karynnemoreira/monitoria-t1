@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Revisão T1</title>
+  </head>
+  <body>
+    <header>
+      <h2>PortoLogística</h2>
+      <nav>
+        <!-- Navegação :  NAV > Ul > LI > A-->
+        <ul>
+          <li><a href="#" target="_blank"> Home </a></li>
+          <li><a href="#" target="_blank"> Mais </a></li>
+          <li><a href="#" target="_blank"> Sobre </a></li>
+          <li><a href="#" target="_blank"> Serviços </a></li>
+          <li><a href="#" target="_blank"> Contatos </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--MONITORIA-->
+    <main>
+      <form>
+        <!--Tudo que for voltado para formulário, vai dentro da tag FORM-->
+        <fieldset>
+          <!--Moldura que guarda o formulário (Opcional)-->
+          <legend>Cadastro</legend>
+          <!--Legenda para o formulário, ela descreve o fieldset-->
+
+          <div>
+            <!--Tag não semântica, utilizada apenas para pequenas divisões quando NÃO SE TEM uma tag semântica para isso.-->
+
+            <label for="nome"> NOME </label>
+            <!--Label é a etiqueta para o input, descreve para o que aquele input serve-->
+
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome"
+            />
+            <!--Input é um campo para digitação, type é o tipo daquele input, name é o nome dado para aquele input (o mesmo da label de identificação (conecta a label com o input)) id é como se fosse a identidade/cpf do input-->
+          </div>
+
+          <div>
+            <label for="email"> EMAIL</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email"
+            />
+          </div>
+
+          <div>
+            <label for="telefone">TELEFONE</label>
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="Digite seu telefone"
+            />
+          </div>
+
+          <div class="box-msg">
+            <label for="mensagem">MENSAGEM</label>
+            <input type="text" name="mensagem" id="mensagem" />
+          </div>
+
+          <!--button do type submit é para enviar as informações preenchidas no formulário-->
+          <button type="submit">ENVIAR</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
